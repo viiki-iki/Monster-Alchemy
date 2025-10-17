@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da204be2823edf94fa6b7042e97c10fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEmpty: 1
   bubbleTypesPrefabs:
   - {fileID: 202069650559021314, guid: 9a31a91de74fae745b9a4ed31b220f2a, type: 3}
   - {fileID: 2000190173740785535, guid: 0789754fedbdd134fa3b7481d6ed0711, type: 3}
+  bubble: {fileID: 0}
+  bubbleTypeInt: 0
+  thermoManager: {fileID: 0}

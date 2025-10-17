@@ -379,6 +379,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -486,6 +490,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
       value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
@@ -1079,6 +1087,7 @@ Transform:
   - {fileID: 1103647944}
   - {fileID: 1506315239}
   - {fileID: 1627445989}
+  - {fileID: 895959450}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706455123
@@ -1316,6 +1325,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
       value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
@@ -1624,6 +1637,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -1679,6 +1696,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
   m_PrefabInstance: {fileID: 875982733}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &895959449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895959450}
+  - component: {fileID: 895959451}
+  m_Layer: 0
+  m_Name: ThermoManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895959450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895959449}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 679607468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895959451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895959449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a57edaf087f6f94fb9f2c10e3cabbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cauldronEvents: {fileID: 1627445990}
+  slider: {fileID: 1437604502}
+  speed: 1
 --- !u!1 &917643953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1878,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
       value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
@@ -2387,6 +2455,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -2451,13 +2523,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506315239}
+  - component: {fileID: 1506315240}
   m_Layer: 0
-  m_Name: InteractionsManager
+  m_Name: BubblesManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1506315239
 Transform:
   m_ObjectHideFlags: 0
@@ -2473,6 +2546,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 679607468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506315240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506315238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d1f923d59ddc44298ae25ede660d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cauldronEvents: {fileID: 1627445990}
+  maxBubbles: 10
+  spawnPointsBase:
+  - {fileID: 3033807951031685938}
+  - {fileID: 1817323266}
+  - {fileID: 1606587181}
+  - {fileID: 1485821368}
+  - {fileID: 73894110}
+  - {fileID: 1031918666}
+  - {fileID: 875982734}
+  - {fileID: 406356384}
+  - {fileID: 1769608369}
+  - {fileID: 761568082}
+  maxSpawnInterval: 2
 --- !u!1 &1526881551
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,6 +2742,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -2708,8 +2811,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1627445989}
   - component: {fileID: 1627445990}
+  - component: {fileID: 1627445991}
   m_Layer: 0
-  m_Name: Fire&ThermoManager
+  m_Name: CauldronManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2739,28 +2843,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1627445988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3206f629e9ac714caa91373ebffec89, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b3abd828b16c849b517cbd3e4d3040, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1627445991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627445988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74886cf809578d441a1579e50c99486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireState: 0
   fireButton: {fileID: 1564004204}
   fireSprite: {fileID: 1709263165}
-  temperatureSlider: {fileID: 1437604502}
-  maxBubbles: 10
-  spawnPointsBase:
-  - {fileID: 3033807951031685938}
-  - {fileID: 1817323266}
-  - {fileID: 1606587181}
-  - {fileID: 1485821368}
-  - {fileID: 73894110}
-  - {fileID: 1031918666}
-  - {fileID: 875982734}
-  - {fileID: 406356384}
-  - {fileID: 1769608369}
-  - {fileID: 761568082}
-  maxSpawnInterval: 2
-  missiontimerteste: 25
-  emptynn: 0
+  missiontimerteste: 15
+  cauldronEvents: {fileID: 1627445990}
 --- !u!1 &1631207770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,6 +3182,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -3276,6 +3382,10 @@ PrefabInstance:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
+      value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: m_Name
@@ -3387,6 +3497,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
       propertyPath: thermoManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203776078409251571, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}
+      propertyPath: cauldronEvents
       value: 
       objectReference: {fileID: 1627445990}
     - target: {fileID: 1591283228695407537, guid: 73ef679dc5d46e645a3ab6bbd54ee788, type: 3}

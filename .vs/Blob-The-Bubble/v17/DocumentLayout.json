@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Clone\\Blob-The-Bubble\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|d:\\clone\\blob-the-bubble\\assets\\scripts\\firethermo\\firethermomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firethermo\\firethermomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|d:\\clone\\blob-the-bubble\\assets\\scripts\\cauldroncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cauldroncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|d:\\clone\\blob-the-bubble\\assets\\scripts\\player\\playerinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinteractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|d:\\clone\\blob-the-bubble\\assets\\scripts\\cevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cevents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|D:\\Clone\\Blob-The-Bubble\\assets\\scripts\\thermomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6D5A84F-12E7-BEAA-E862-83B7A25EA68F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\thermomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerInteractions.cs",
-              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\Player\\PlayerInteractions.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInteractions.cs",
-              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\Player\\PlayerInteractions.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInteractions.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAADwv3sAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CauldronController.cs",
+              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\CauldronController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CauldronController.cs",
+              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\CauldronController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CauldronController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T01:44:57.2Z",
+              "WhenOpened": "2025-10-17T01:01:06.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FireThermoManager.cs",
-              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\FireThermo\\FireThermoManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FireThermo\\FireThermoManager.cs",
-              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\FireThermo\\FireThermoManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FireThermo\\FireThermoManager.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAEwI4AAABBAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ThermoManager.cs",
+              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\ThermoManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ThermoManager.cs",
+              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\ThermoManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ThermoManager.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T21:11:01.423Z",
+              "WhenOpened": "2025-10-17T00:57:02.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BubblesSpawnPoints.cs",
+              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs",
+              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FireThermo\\BubblesSpawnPoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T00:55:00.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CEvents.cs",
+              "DocumentMoniker": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\CEvents.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CEvents.cs",
+              "ToolTip": "D:\\Clone\\Blob-The-Bubble\\Assets\\Scripts\\CEvents.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CEvents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T20:01:22.217Z",
               "EditorCaption": ""
             }
           ]

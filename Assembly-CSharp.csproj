@@ -60,13 +60,16 @@
     <Analyzer Include="D:\Unity\Unity Hub\Editor\2022.3.55f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\FireThermo\BubblesSpawnPoints.cs" />
+    <Compile Include="Assets\Scripts\CEvents.cs" />
     <Compile Include="Assets\Scripts\Player\SpoonTip.cs" />
+    <Compile Include="Assets\Scripts\ThermoManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-    <Compile Include="Assets\Scripts\FireThermo\FireThermoManager.cs" />
+    <Compile Include="Assets\Scripts\BubblesSpawnPoints.cs" />
     <Compile Include="Assets\Scripts\UI\ItensManager.cs" />
+    <Compile Include="Assets\Scripts\CauldronController.cs" />
     <Compile Include="Assets\Scripts\UI\BookPanelManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractions.cs" />
+    <Compile Include="Assets\Scripts\BubbleSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
