@@ -120,7 +120,6 @@ public class PlayerInteractions : MonoBehaviour
                                     bubble.DestroyBubble();
                                 }
                             }
-
                         }
                         else
                         {
@@ -135,13 +134,9 @@ public class PlayerInteractions : MonoBehaviour
                                     bubble.DestroyBubble();
                                 }
                             }
-
                         }
-                                               
                     }
-
-                }
-                    
+                }                   
                     
                   //  if(!tip.Bubble())
                   //  {

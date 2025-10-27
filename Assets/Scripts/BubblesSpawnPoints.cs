@@ -10,18 +10,18 @@ public class BubblesSpawnPoints : MonoBehaviour
     float bubbleTypeInt;
     [SerializeField] CEvents cauldronEvents;
 
-    public GameObject GetBubbleType()
+    public GameObject GetBubbleType() // futuramente fazer um scriptable pra cada tipo de bolha?
     {
         int randomIndex = Random.Range(0, bubbleTypesPrefabs.Length);
         bubbleTypeInt = Random.Range(5, 15);
         return bubbleTypesPrefabs[randomIndex];
     }
 
-    public void DestroyBubble()
+    public void DestroyBubble() //mouse interac
     {
         // Aqui você pode adicionar uma animação antes de destruir
         Destroy(bubble);
-        //   isEmpty = true;
         cauldronEvents.RaiseTemperatureChanged(bubbleTypeInt);
+        bubbleTypeInt = 0;
     }
 }

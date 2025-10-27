@@ -8,11 +8,17 @@ public class ThermoManager : MonoBehaviour
 
     [SerializeField] Slider slider;
     float max = 100f;
-    //float actual;
-    [SerializeField] float speed = 1f;
+    float actual = 0f;
+    float min = 0f;
+    [SerializeField] float speed;
 
-    bool increase = false;
-    bool decrease = false;
+    bool increase;
+    bool decrease;
+
+   // private void Awake()
+   // {
+   //     slider.onValueChanged.AddListener(Listen);
+   // }
 
     void Start()
     {
@@ -25,7 +31,7 @@ public class ThermoManager : MonoBehaviour
         cauldronEvents.OnResetCauldron += ResetThermo;
         cauldronEvents.OnTemperatureChanged += ForceDecreaseTemperature;
     }
-
+   
     void OnDisable()
     {
         cauldronEvents.OnCauldronTurnedOn -= ChangeThermo;
@@ -41,39 +47,45 @@ public class ThermoManager : MonoBehaviour
 
     void ResetThermo()
     {
-        slider.minValue = 0;
+        slider.minValue = min;
         slider.maxValue = max;
-        slider.value = 0;
+        slider.value = actual;
         increase = false;
         decrease = false;
     }
 
-    private void Update()
+    void Update()
     {
         if (increase)
-        {
-            if (slider.value > max)
-                slider.value = max;
+        {                               
+            if(actual > max)          
+                slider.value = max;        
             else
-                slider.value += speed * Time.deltaTime;
+            {
+                actual += speed * Time.deltaTime;
+                slider.value = actual;
+            }              
         }
 
         if (decrease)
         {
-            if (slider.value < 0)
+            if (actual < min)
             {
-                slider.value = 0;
+                slider.value = min;
                 decrease = false;
             }
             else
-                slider.value -= speed * Time.deltaTime;
+            {
+                actual -= speed * Time.deltaTime;
+                slider.value = actual;
+            }              
         }        
     } 
 
     void ForceDecreaseTemperature(float value)
     {
-        slider.value -= value;
-        if (slider.value <= 0)
-            slider.value = 0;       
+        actual -= value;
+        if (actual < min)
+            slider.value = min;       
     }
 }

@@ -44,7 +44,7 @@ public class CauldronController : MonoBehaviour
             fireSprite.SetActive(false);
             cauldronEvents.RaiseCauldronTurnedOn(false);
             //StartCoroutine(CoolingDown());            
-            Debug.Log("fogo desligado");    //anim
+            Debug.Log("fogo desligado");    
         }
     }
 

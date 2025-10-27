@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cauldronEvents: {fileID: 1627445990}
   slider: {fileID: 1437604502}
-  speed: 1
+  speed: 10
 --- !u!1 &917643953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 2
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 100
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -2530,7 +2530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1506315239
 Transform:
   m_ObjectHideFlags: 0
@@ -2571,7 +2571,7 @@ MonoBehaviour:
   - {fileID: 406356384}
   - {fileID: 1769608369}
   - {fileID: 761568082}
-  maxSpawnInterval: 2
+  interval: 3
 --- !u!1 &1526881551
 GameObject:
   m_ObjectHideFlags: 0

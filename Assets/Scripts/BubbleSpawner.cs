@@ -10,15 +10,17 @@ public class BubbleSpawner : MonoBehaviour
 
     [SerializeField] int maxBubbles = 10;
     private int currentBubbles = 0;
-    [SerializeField] GameObject[] spawnPointsBase;      //apenas pegar posição e capacidade; nao mexer em isempty
-    [SerializeField] int maxSpawnInterval;
+    [SerializeField] GameObject[] spawnPointsBase;      //apenas pegar posição e capacidade; 
+    [SerializeField] int interval;
     List<BubblesSpawnPoints> emptyPoints = new List<BubblesSpawnPoints>();
 
     bool fireState = false;
+    float speed = 1f;
 
     private void Start()
     {
-        emptyPoints.Capacity = spawnPointsBase.Length;
+        ResetBubbles();
+        emptyPoints.Capacity = spawnPointsBase.Length;      
     }
 
     void OnEnable()
@@ -38,7 +40,7 @@ public class BubbleSpawner : MonoBehaviour
         fireState = state;
 
         if (state)
-            StartCoroutine(Spawning());         
+            StartCoroutine(Spawning());
     }
 
     IEnumerator Spawning()
@@ -49,8 +51,10 @@ public class BubbleSpawner : MonoBehaviour
             yield break;
         }
 
+        float randomInterval = Random.Range(1, interval);
         if (fireState)
         {
+            Debug.Log("spawning");
             int randomIndex = Random.Range(0, emptyPoints.Count);
             BubblesSpawnPoints pointsScript = emptyPoints[randomIndex];
 
@@ -59,12 +63,33 @@ public class BubbleSpawner : MonoBehaviour
 
             pointsScript.bubble = bubble;
             emptyPoints.Remove(pointsScript);
-
-            int randomInterval = Random.Range(1, maxSpawnInterval);
-            yield return new WaitForSeconds(randomInterval);
+            
+           // yield return new WaitForSeconds(randomInterval);
+            Debug.Log("help");
         }
-        else { yield break; }
+       // else
+       // {
+       //     foreach (var point in spawnPointsBase)
+       //     {
+       //         if (!fireState)
+       //         {
+       //             BubblesSpawnPoints script = point.GetComponent<BubblesSpawnPoints>();
+       //             Destroy(script.bubble);
+       //             yield return new WaitForSeconds(randomInterval);
+       //         }
+       //         else
+       //             yield break;                            
+       //     }
+       // }
     }
+
+   // private void Update()
+   // {
+   //     if (!fireState)
+   //     {
+   //
+   //     }
+   // }
 
     void ResetBubbles() 
     {
@@ -72,8 +97,8 @@ public class BubbleSpawner : MonoBehaviour
         foreach (var point in spawnPointsBase)      //vai verificar 1x
         {
             BubblesSpawnPoints script = point.GetComponent<BubblesSpawnPoints>();
-            emptyPoints.Add(script);
-            //destroy?
+            if(script.bubble != null) { Destroy(script.bubble); }           
+            emptyPoints.Add(script);         
         }
     }   
 }
